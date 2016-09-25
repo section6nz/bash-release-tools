@@ -18,9 +18,14 @@
 # You should have received a copy of the GNU Lesser General Public License
 # along with Bash Release Tools. If not, see <http://www.gnu.org/licenses/>.
 
+# Outputs an informational message with the specified content.
+function warning {
+  echo -e "[INFO] $1" >&1
+}
+
 # Outputs a warning message with the specified content.
 function warning {
-  echo -e "[WARNING] $1" >&2
+  echo -e "[WARN] $1" >&2
 }
 
 # Outputs an error message with the specified content, and optionally terminates the script if EXIT_ON_ERROR is set to true.
