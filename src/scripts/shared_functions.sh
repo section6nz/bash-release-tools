@@ -17,9 +17,10 @@
 #
 # You should have received a copy of the GNU Lesser General Public License
 # along with Bash Release Tools. If not, see <http://www.gnu.org/licenses/>.
+# Outputs an informational message with the specified content.
 
 # Outputs an informational message with the specified content.
-function warning {
+function info {
   echo -e "[INFO] $1" >&1
 }
 
